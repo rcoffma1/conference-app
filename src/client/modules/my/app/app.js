@@ -8,9 +8,9 @@ export default class App extends LightningElement {
         this.state = 'list';
         window.history.replaceState('list', null, '');
         window.onpopstate = event => {
-          if (event.state) {
-            this.state = event.state;
-          }
+            if (event.state) {
+                this.state = event.state;
+            }
         };
     }
     handleNavigate(event) {
